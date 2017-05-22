@@ -1,9 +1,22 @@
+//
+//  main.c
+//  PBR
+//
+
 #include <stdio.h>
 #include <math.h>
 
 void cartesianToPolar (float x, float y, float *rPtr, float *thetaPtr){
-    // Store the radius in the supplied address
-    *rPtr = sqrtf(x*x + y*y);
+    // Is rPtr non-NULL?
+    if (rPtr){
+        // Store the radius in the supplied address
+        *rPtr = sqrtf(x*x + y*y);
+    }
+    // Is thetaPtr NULL?
+    if (!thetaPtr){
+        // Skip the rest of the function
+        return;
+    }
     // Calculate theta
     float theta;
     if (x == 0.0){
