@@ -12,21 +12,21 @@ float bodyMassIndex (Person *p){
 int main(int argc, const char * argv[]) {
     
     // Allocate memory for one Person structure
-    Person *x = (Person *) malloc(sizeof(Person));
+    Person *mikey = (Person *) malloc(sizeof(Person));
     
     // Fill in two members of the structure
-    x->heightInMeters = 2.0;
-    x->weightInKilos = 81;
+    mikey->heightInMeters = 1.7;
+    mikey->weightInKilos = 96;
     
     // Print out the BMI of the original Person
-    float xBMI = bodyMassIndex(x);
-    printf("x has a BMI of %f\n", xBMI);
+    float mikeyBMI = bodyMassIndex(mikey);
+    printf("mikey has a BMI of %f\n", mikeyBMI);
     
     // Let the memory be recycled
-    free(x);
+    free(mikey);
     
     // Forget where it was
-    x = NULL;
+    mikey = NULL;
     
     return 0;
 }
