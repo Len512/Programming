@@ -1,0 +1,1 @@
+Interface and implementation files are the same as in the previous code example.
