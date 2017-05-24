@@ -1,0 +1,7 @@
+In Xcode 8 there is no Empty option.
+Used a Single View and then deleted Storyboard main from info, 
+deleted storyboard related files from the left column also.
+In AppDelegate.m the table, field and button need to be added to 
+the window's view controller and not to the windo itself
+https://forums.bignerdranch.com/t/xcode7-0-insert-button-not-responding/8426
+https://stackoverflow.com/questions/25783282/how-to-create-an-empty-application-in-xcode-6-without-storyboard
