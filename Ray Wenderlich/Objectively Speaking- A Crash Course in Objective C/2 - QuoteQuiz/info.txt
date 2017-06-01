@@ -1,0 +1,1 @@
+Tips show even if the user has used the Tip button more than 3 times.
