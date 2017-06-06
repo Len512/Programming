@@ -1,2 +1,0 @@
-Xcode 8.3.2
-https://www.raywenderlich.com/1797/ios-tutorial-how-to-create-a-simple-iphone-app-part-1
