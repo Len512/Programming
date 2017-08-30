@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Verdana", sans-serif;
+}
+html {
+    background-color: white;
+    display: table;
+    margin: auto;
+}
+body {
+    padding: 2em;
+    margin: 2em;
+    border: 1px solid teal;
+    border-radius: 0.5em;
+    width: 100%;
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+p {
+    font-size: 3em;
+}
+#display {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+@media (max-width: 600px){
+    .buttons {
+        flex-flow: column wrap;
+    }
+}
+button {
+    padding: 0.5em 0.5em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: 1px solid teal;
+    border-radius: 0.5em;
+    background-color: white;
+    color: teal;
+    width: 9em;
+    flex: 1;
+}
+button:hover {
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+}
+button:focus {
+    outline:0;
+}
+table#historyTable {
+    margin: 3em auto;
+    border: 1px solid white;
+    text-align: center;
+    width: 40%;
+}
+#historyTable thead {
+    margin: 0 auto;
+}
+.scrollable {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 15em;
+}
+table#historyRows{
+    margin: 0 auto;
+    width: 100%;
+}
+table#historyRows td{
+    padding: 0.5em 0.5em;
+}
+table#historyRows tr:nth-child(odd){
+    background-color: white;
+    color: teal;
+}
